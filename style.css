@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --primary-color: #121212;
+    --accent-color: #f95e0b;
+    --text-color: #fff;
+    --button-color: #f1d063;
+    --background-color: #f3f4f6;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+    background: var(--text-color);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 25px;
+    background: var(--accent-color);
+}
+
+body{
+    height: 100vh;
+    min-height: fit-content;
+    width: 100%;
+    font-family: sans-serif;
+    background: var(--background-color);
+}
+header{
+    height: 70px;
+    min-height: fit-content;
+    width: 100%;
+    padding: 10px 20px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--primary-color);
+    color: var(--text-color);
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.button{
+    border: 1px solid var(--primary-color);
+    background: var(--button-color);
+    padding: 10px 20px;
+    font-weight: bold;
+}
+main{
+    height: 100%;
+    min-height: fit-content;
+    width: 100%;
+}
+.welcome{
+    width: 100%;
+    height: 500px;
+    min-height: fit-content;
+    padding: 30px;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.wlc-1{
+    max-width: 470px;
+    width: 100%;
+    min-width: 300px;
+    height: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.wlc-1 span{
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.wlc-1 h2{
+    font-weight: bold;
+    color: var(--accent-color);
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+.wlc-1 p{
+    font-style: oblique;
+}
+.wlc-1-btn{
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 0px 10px;
+}
+.wlc-2{
+    width: fit-content;
+    height: 300px;
+}
+.wlc-2 img{
+    height: 300px;
+    width: fit-content;
+}
