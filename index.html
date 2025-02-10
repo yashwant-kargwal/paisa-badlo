@@ -6,13 +6,15 @@
     <title>Paisa Badlo</title>
     <link rel="shortcut icon" href="asset/favicon.ico" type="image/x-icon">
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yashwant-kargwal/quickcss@qck1.0.5/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>PAISA</h1>
-        <a class="button" href="">Get Code</a>
+        <a target="_blank" class="button" href="https://github.com/yashwant-kargwal/paisa-badlo">Get Code</a>
     </header>
 
     <main>
@@ -22,8 +24,8 @@
                 <h2>Get Real-Time Exchange Rates</h2>
                 <p>A simple and reliable tool to check currency values instantly.</p>
                 <div class="wlc-1-btn">
-                    <a class="button" href="">LinkedIn</a>
-                    <a class="button" href="">Instagram</a>
+                    <a target="_blank" class="button" href="https://www.linkedin.com/in/yashwant-kargwal/">LinkedIn</a>
+                    <a target="_blank" class="button" href="https://instagram.com/yashwant_kargwal">Instagram</a>
                 </div>
             </div>
             <div class="wlc-2">
@@ -35,14 +37,14 @@
             <div class="heroFormContainer">
                 <form action="">
                     <h3>Enter Amount</h3>
-                    <input name="Amount" value="1" min="1" type="number">
+                    <input id="userValue" name="Amount" value="1" min="1" type="number">
                     <div class="insideSelect">
                         <div class="selectBox">
                             <h4>From</h4>
                             <div class="selectInsideBox">
                                 <img src="https://flagsapi.com/US/flat/64.png" alt="Exchange Flag">
                                 <select aria-label="select  from currency" name="from" id="from">
-                                    <option value="us">USD</option>
+                                 
                                 </select>
                             </div>
                         </div>
@@ -52,26 +54,60 @@
                         <div class="selectBox">
                             <h4>To</h4>
                             <div class="selectInsideBox">
-                                <img src="https://flagsapi.com/IN/flat/64.png" alt="Exchange Flag">
+                                <img src="https://flagsapi.com/IN/flat/64.png" alt="Exchange Flag" alt="Exchange Flag">
                                 <select aria-label="select to currency" name="to" id="to">
-                                    <option value="INR">INR</option>
+                               
                                 </select>
                             </div>
                         </div>
                     </div>
 
                     <h3>Result</h4>
-                    <p>1 USD = 83.29 INR</p>
+                    <p class="lastResult"></p>
                     
-                    <button>Calculate</button>
+                    <button id="submit" class="button">Calculate</button>
                 </form>
+            </div>
+        </section>
+        <section class="documentation">
+            <div class="QuickCSS-blog">
+                <h2>Paisa Badlo - Documentation</h2>
+                <hr>
+        
+                <h2>About Me</h2>
+                <p>Hi, I'm Yashwant Kargwal, a web developer passionate about building useful web applications. <b>Paisa Badlo</b> is a simple and efficient currency converter that provides real-time exchange rates.</p>
+        
+                <h2>Project Overview</h2>
+                <p><b>Paisa Badlo</b> fetches real-time currency data using the following API:</p>
+                <code>https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies</code>
+                <p>This project is lightweight, user-friendly, and perfect for quick currency conversions.</p>
+        
+                <h2>How to Use</h2>
+                <ol>
+                    <li>Enter the amount you want to convert.</li>
+                    <li>Select the currency to convert from and to.</li>
+                    <li>Click the "Calculate" button to get real-time exchange rates.</li>
+                </ol>
+        
+                <h2>API Usage</h2>
+                <p>To fetch currency data, use the following JavaScript code:</p>
+                <code>fetch("https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${fromCurr.value.toLowerCase()}.json")</code>
+                <br>
+                <br>
+        
+                <h2>Report an Issue / Contribute</h2>
+                <p>If you encounter any issues or want to contribute to the project, feel free to submit a pull request or open an issue on GitHub.</p>
+                
+                <button>
+                    <a target="_blank" href="https://github.com/yashwant-kargwal/paisa-badlo">Submit Issue / Pull Request</a>
+                </button>
             </div>
         </section>
     </main>
 
     <footer>
         <p>@2025 Paisa Badlo | Yashwant Kargwal</p>
-        <a href="">Buy Me A Coffee</a>
+        <a target="_blank" class="button" href="https://quickcss-docs.hashnode.space/guide/support-and-donation/buy-me-a-coffee#ways-to-contribute">Buy Me A Coffee</a>
     </footer>
 
     <script src="countryData.js"></script>

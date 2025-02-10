@@ -55,7 +55,19 @@ a{
     background: var(--button-color);
     padding: 10px 20px;
     font-weight: bold;
+    cursor: pointer;
+    transition: all 0.1s;
 }
+
+.button:hover{
+    box-shadow: 2px 2px 1px var(--primary-color);
+}
+
+.button:active{
+    transform: scale(0.95);
+}
+
+
 main{
     height: 100%;
     min-height: fit-content;
@@ -159,6 +171,12 @@ form h3{
     font-weight: bold;
     margin-bottom: 5px;
 }
+form p{
+    text-align: center;
+    padding: 10px;
+    width: fit-content;
+}
+
 form input{
     height: 50px;
     font-size: 22px;
@@ -180,7 +198,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
     align-items: center;
     justify-content: space-between;
     padding: 20px 0px;
-    gap: 20px;
+    gap: 30px;
 }
 .insideSelect i{
     font-size: 2rem;
@@ -215,4 +233,35 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
     height: 100%;
     outline: none;
     padding: 5px;
+}
+
+@media (max-width:583px) {
+    .insideSelect{
+        flex-direction: column;
+        align-items: normal;
+    }
+}
+
+.documentation{
+    padding: 50px 0px;
+}
+
+
+footer{
+    height: 70px;
+    min-height: fit-content;
+    padding: 20px;
+    background: var(--primary-color);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.QuickCSS-blog button{
+    background: var(--button-color);
+}
+.QuickCSS-blog{
+    padding: 0px 10px;
 }
